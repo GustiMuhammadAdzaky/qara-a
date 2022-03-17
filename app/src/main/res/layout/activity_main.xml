@@ -16,11 +16,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <View
+            <ImageView
                 android:id="@+id/view2"
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:background="@drawable/bg_chocholate"
+                android:src="@drawable/header_home"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -28,12 +28,15 @@
             <View
                 android:id="@+id/view3"
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="1000dp"
                 android:layout_marginTop="160dp"
                 android:background="@drawable/bg_home_rad"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            </View>
 
             <View
                 android:id="@+id/view13"
@@ -50,12 +53,12 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_nabi"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/view13"
+                app:layout_constraintTop_toBottomOf="@+id/view2"
                 tools:listitem="@layout/rv_kisah_nabi">
 
             </androidx.recyclerview.widget.RecyclerView>

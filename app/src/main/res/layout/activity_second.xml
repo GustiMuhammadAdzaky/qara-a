@@ -36,16 +36,18 @@
                 android:layout_height="180dp"
                 android:background="@drawable/bg_chocholate"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <View
                 android:id="@+id/view3"
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
-                android:layout_marginTop="160dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="152dp"
                 android:background="@drawable/bg_home_rad"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -91,10 +93,10 @@
                         android:text="usia:" />
 
                     <TextView
-                        android:layout_marginLeft="5dp"
                         android:id="@+id/TvIsiUsia"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
                         android:text="isi" />
                 </LinearLayout>
 
@@ -132,26 +134,11 @@
                 app:layout_constraintStart_toEndOf="@+id/linearLayout"
                 app:layout_constraintTop_toTopOf="@+id/linearLayout">
 
-
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="12dp"
-                    android:foreground="@drawable/ic_bookmark"
-                    android:foregroundGravity="center">
-
-                    <Button
-                        android:id="@+id/StartButton2x2"
-                        android:layout_width="50dp"
-                        android:layout_height="fill_parent"
-                        android:background="@drawable/tombol_bulat"
-                        android:gravity="center_vertical" />
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:foreground="@drawable/ic_hearing_black_24dp"
+                    android:foreground="@drawable/ic_volume_up_black_24dp"
                     android:foregroundGravity="center">
 
                     <Button
@@ -161,6 +148,24 @@
                         android:background="@drawable/tombol_bulat"
                         android:gravity="center_vertical" />
                 </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="@drawable/ic_bookmark"
+                    android:foregroundGravity="center">
+
+                    <Button
+                        android:id="@+id/StartButton2x2"
+                        android:shadowColor="#000000"
+                        android:layout_width="50dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/tombol_bulat"
+                        android:gravity="center_vertical" />
+                </FrameLayout>
+
+
             </LinearLayout>
 
 <!--            <WebView-->
@@ -178,15 +183,49 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida vitae ante quis faucibus. Sed gravida odio nisl, non ultrices libero rutrum at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus pulvinar, libero nec luctus malesuada, nulla nunc volutpat leo, eget sollicitudin augue massa a magna. Vivamus commodo eu enim egestas gravida. Proin scelerisque libero a accumsan feugiat. Sed dictum leo felis, nec interdum urna laoreet et. Vestibulum vulputate diam ut auctor efficitur. Phasellus nec commodo elit, eget malesuada dui. Fusce eleifend est sed malesuada mattis.
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus lacus, molestie et tellus et, commodo sodales metus. Donec rutrum ut quam vitae porttitor. Cras varius tincidunt mi, maximus venenatis mi feugiat eget. Aenean aliquet molestie metus a pharetra. Proin blandit magna eu elit porta pellentesque. Vivamus ornare sem metus, sed varius augue commodo nec. Pellentesque a tellus non magna dignissim dapibus nec ac magna.
 
-Proin fermentum dictum porttitor. In volutpat eros in justo condimentum, sed dapibus lacus rhoncus. Donec interdum dapibus vehicula. Suspendisse potenti. Curabitur leo augue, dapibus a enim eget, suscipit lobortis dui. Nunc sit amet vehicula purus, eget ultrices quam. Nam et nisl et nibh ullamcorper egestas. Nam posuere neque nec metus viverra, sed congue dolor laoreet. Sed ac posuere tellus. Nam egestas sed diam et tincidunt. Phasellus sed purus sit amet nibh ullamcorper dictum. Cras ac nulla ac neque placerat imperdiet. Cras id auctor odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida vitae ante quis faucibus. Sed gravida odio nisl, non ultrices libero rutrum at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus pulvinar, libero nec luctus malesuada, nulla nunc volutpat leo, eget sollicitudin augue massa a magna. Vivamus commodo eu enim egestas gravida. Proin scelerisque libero a accumsan feugiat. Sed dictum leo felis, nec interdum urna laoreet et. Vestibulum vulputate diam ut auctor efficitur. Phasellus nec commodo elit, eget malesuada dui. Fusce eleifend est sed malesuada mattis.
+Aenean nisl mauris, fermentum a pellentesque in, feugiat ut eros. Ut maximus justo non mauris tristique suscipit. Sed fringilla, diam ut feugiat congue, est nisl posuere turpis, et vulputate augue mi et turpis. Nulla ut magna ultricies, volutpat erat sed, pharetra magna. Aliquam tempor est massa, eget convallis ex euismod sed. Nam lacinia, nunc in luctus facilisis, enim erat vehicula ipsum, et aliquet orci odio sed ante. Donec vitae est malesuada, condimentum nunc quis, facilisis tortor. Donec eget ex eget lorem blandit rutrum eu non nisi. Vivamus lacus massa, efficitur vitae bibendum sed, vestibulum auctor augue. Nunc faucibus odio erat, vitae rutrum mi ornare at. Ut sollicitudin neque massa, in interdum tellus ornare sit amet. Donec fringilla, elit at maximus efficitur, lorem velit tristique lorem, id rutrum lectus nulla vitae nisl. Fusce commodo condimentum elit, vitae molestie nulla consectetur ut. Donec sed iaculis lacus. Ut in enim eros.
 
-Proin fermentum dictum porttitor. In volutpat eros in justo condimentum, sed dapibus lacus rhoncus. Donec interdum dapibus vehicula. Suspendisse potenti. Curabitur leo augue, dapibus a enim eget, suscipit lobortis dui. Nunc sit amet vehicula purus, eget ultrices quam. Nam et nisl et nibh ullamcorper egestas. Nam posuere neque nec metus viverra, sed congue dolor laoreet. Sed ac posuere tellus. Nam egestas sed diam et tincidunt. Phasellus sed purus sit amet nibh ullamcorper dictum. Cras ac nulla ac neque placerat imperdiet. Cras id auctor odio."
+Phasellus non dolor leo. Donec eleifend placerat mattis. Nunc consequat venenatis turpis, ut eleifend dui vehicula eget. Praesent maximus vehicula lorem. Morbi tristique, augue ac viverra malesuada, nunc magna maximus ex, id mollis erat tortor id libero. Nam vel mi sed turpis mollis faucibus. Maecenas dignissim elit ac vestibulum congue.
+
+Nullam tincidunt velit ac libero molestie, nec elementum elit molestie. Integer hendrerit ligula nec faucibus vehicula. Sed viverra eros quis metus feugiat euismod. Sed bibendum lacus id nisi bibendum, ut volutpat justo dictum. Pellentesque lorem quam, auctor et massa et, congue pharetra mauris. Sed dui quam, scelerisque finibus ultrices faucibus, accumsan eu metus. Maecenas viverra malesuada metus nec pretium. Donec vitae dui turpis. Nulla dapibus finibus felis, quis semper eros posuere et. Suspendisse placerat vel sem eget auctor. Proin tempor molestie dictum. Praesent nec euismod tortor, at elementum justo. In rutrum gravida purus, quis fermentum massa suscipit id. Vivamus id leo tristique, ullamcorper ligula at, laoreet diam.
+
+Maecenas ac mauris urna. Morbi at nisl tortor. Ut elementum neque eget sem tempor, ut ullamcorper justo venenatis. Nullam augue nulla, suscipit sit amet est in, fringilla pulvinar arcu. Vestibulum euismod malesuada dui eu tempus. Aenean tincidunt et magna nec vehicula. Morbi euismod auctor ante a vestibulum. Sed tincidunt tortor nec justo bibendum lacinia. In hac habitasse platea dictumst. Curabitur rhoncus quam pretium, ultricies felis sed, auctor enim. Donec vel rhoncus turpis, nec ultricies justo. Aenean lobortis diam id rhoncus dapibus. Nullam nec dolor in orci dictum egestas. Praesent ac purus ut ex bibendum pharetra. Duis lacinia urna quis ipsum vestibulum, et hendrerit velit elementum."
                 app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <Button
+                android:id="@+id/button_bagikan"
+                android:layout_width="74dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="12dp"
+                android:text="Bagikan"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:background="@drawable/rounded_corner"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+                app:layout_constraintTop_toBottomOf="@+id/TvDetail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/ic_arrow_back_black_24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

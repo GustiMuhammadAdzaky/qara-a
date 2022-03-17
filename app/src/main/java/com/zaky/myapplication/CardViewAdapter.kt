@@ -28,6 +28,7 @@ class CardViewAdapter (private val listNabi: ArrayList<Nabi>) : RecyclerView.Ada
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.rv_kisah_nabi, parent, false)
         return CardViewViewHolder(view)
+
     }
 
     override fun onBindViewHolder(holder: CardViewViewHolder, position: Int) {
