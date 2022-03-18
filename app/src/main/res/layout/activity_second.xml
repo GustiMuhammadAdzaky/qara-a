@@ -30,13 +30,14 @@
                 android:orientation="vertical"
                 app:layout_constraintGuide_end="20dp" />
 
-            <View
+            <ImageView
                 android:id="@+id/view2"
                 android:layout_width="match_parent"
+                android:scaleType="fitXY"
                 android:layout_height="180dp"
-                android:background="@drawable/bg_chocholate"
+                android:src="@drawable/header_nabi"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -213,6 +214,7 @@ Maecenas ac mauris urna. Morbi at nisl tortor. Ut elementum neque eget sem tempo
 
             <TextView
                 android:layout_width="wrap_content"
+                android:onClick="undoButton"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:drawableStart="@drawable/ic_arrow_back_black_24dp"

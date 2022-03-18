@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none"
@@ -25,8 +25,27 @@
                 android:layout_height="180dp"
                 android:src="@drawable/header_home"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:layout_width="138dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="98dp"
+                android:layout_marginEnd="108dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/rounded_button_image"
+                android:text="BACA KISAH PERTAMA"
+                android:textSize="10dp"
+                android:onClick="buttonPindahAdam"
+                android:textColor="@color/ChocholatePrimary"
+                app:layout_constraintBottom_toTopOf="@+id/view3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/view2" />
+
 
             <View
                 android:id="@+id/view3"
@@ -55,9 +74,9 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_nabi"
+                android:layout_marginTop="12dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -67,8 +86,11 @@
             </androidx.recyclerview.widget.RecyclerView>
 
 
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

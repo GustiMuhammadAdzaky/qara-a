@@ -108,24 +108,24 @@ object RvData {
     )
 
     private val images = intArrayOf(
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel,
-        R.drawable.sempel
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
+        R.drawable.icon_sempel,
     )
 
 

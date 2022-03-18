@@ -2,6 +2,7 @@ package com.zaky.myapplication
 
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -13,5 +14,9 @@ class SecondActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+    }
+
+    fun undoButton(view: View) {
+        finish()
     }
 }
