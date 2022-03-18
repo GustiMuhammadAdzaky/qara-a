@@ -9,7 +9,11 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none">
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -32,20 +36,20 @@
 
             <ImageView
                 android:id="@+id/view2"
-                android:layout_width="match_parent"
+                android:layout_width="410dp"
+                android:layout_height="220dp"
                 android:scaleType="fitXY"
-                android:layout_height="180dp"
                 android:src="@drawable/header_nabi"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <View
                 android:id="@+id/view3"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="152dp"
+                android:layout_height="1000dp"
+                android:layout_marginTop="190dp"
                 android:background="@drawable/bg_home_rad"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -56,7 +60,7 @@
                 android:id="@+id/view13"
                 android:layout_width="60dp"
                 android:layout_height="5dp"
-                android:layout_marginTop="184dp"
+                android:layout_marginTop="210dp"
                 android:background="@drawable/home_rectangle"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
@@ -77,6 +81,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/nama_nabi"
+                    android:textSize="18dp"
                     android:textColor="@color/title"
                     android:textStyle="bold" />
 
@@ -89,12 +94,14 @@
 
                     <TextView
                         android:id="@+id/TvUsia"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="usia:" />
+                        android:text="Usia:" />
 
                     <TextView
                         android:id="@+id/TvIsiUsia"
+                        android:textSize="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
@@ -109,16 +116,18 @@
 
 
                     <TextView
+                        android:textSize="12dp"
                         android:id="@+id/TvTahunKelahiran"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tahun Kelahiran:" />
 
                     <TextView
-                        android:layout_marginLeft="5dp"
+                        android:textSize="12dp"
                         android:id="@+id/TvIsiTahunKelahiran"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
                         android:text="isi" />
                 </LinearLayout>
 
@@ -159,40 +168,33 @@
 
                     <Button
                         android:id="@+id/StartButton2x2"
-                        android:shadowColor="#000000"
                         android:layout_width="50dp"
                         android:layout_height="fill_parent"
                         android:background="@drawable/tombol_bulat"
-                        android:gravity="center_vertical" />
+                        android:gravity="center_vertical"
+                        android:shadowColor="#000000" />
                 </FrameLayout>
 
 
             </LinearLayout>
 
-<!--            <WebView-->
-<!--                android:id="@+id/WvDetail"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                app:layout_constraintEnd_toStartOf="@+id/guidelineRight"-->
-<!--                app:layout_constraintStart_toStartOf="@+id/guidelineLeft"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/linearLayout"-->
-<!--                tools:ignore="WebViewLayout" />-->
+            <!--            <WebView-->
+            <!--                android:id="@+id/WvDetail"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                app:layout_constraintEnd_toStartOf="@+id/guidelineRight"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/guidelineLeft"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/linearLayout"-->
+            <!--                tools:ignore="WebViewLayout" />-->
 
             <TextView
                 android:id="@+id/TvDetail"
+                android:textSize="12dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus lacus, molestie et tellus et, commodo sodales metus. Donec rutrum ut quam vitae porttitor. Cras varius tincidunt mi, maximus venenatis mi feugiat eget. Aenean aliquet molestie metus a pharetra. Proin blandit magna eu elit porta pellentesque. Vivamus ornare sem metus, sed varius augue commodo nec. Pellentesque a tellus non magna dignissim dapibus nec ac magna.
-
-Aenean nisl mauris, fermentum a pellentesque in, feugiat ut eros. Ut maximus justo non mauris tristique suscipit. Sed fringilla, diam ut feugiat congue, est nisl posuere turpis, et vulputate augue mi et turpis. Nulla ut magna ultricies, volutpat erat sed, pharetra magna. Aliquam tempor est massa, eget convallis ex euismod sed. Nam lacinia, nunc in luctus facilisis, enim erat vehicula ipsum, et aliquet orci odio sed ante. Donec vitae est malesuada, condimentum nunc quis, facilisis tortor. Donec eget ex eget lorem blandit rutrum eu non nisi. Vivamus lacus massa, efficitur vitae bibendum sed, vestibulum auctor augue. Nunc faucibus odio erat, vitae rutrum mi ornare at. Ut sollicitudin neque massa, in interdum tellus ornare sit amet. Donec fringilla, elit at maximus efficitur, lorem velit tristique lorem, id rutrum lectus nulla vitae nisl. Fusce commodo condimentum elit, vitae molestie nulla consectetur ut. Donec sed iaculis lacus. Ut in enim eros.
-
-Phasellus non dolor leo. Donec eleifend placerat mattis. Nunc consequat venenatis turpis, ut eleifend dui vehicula eget. Praesent maximus vehicula lorem. Morbi tristique, augue ac viverra malesuada, nunc magna maximus ex, id mollis erat tortor id libero. Nam vel mi sed turpis mollis faucibus. Maecenas dignissim elit ac vestibulum congue.
-
-Nullam tincidunt velit ac libero molestie, nec elementum elit molestie. Integer hendrerit ligula nec faucibus vehicula. Sed viverra eros quis metus feugiat euismod. Sed bibendum lacus id nisi bibendum, ut volutpat justo dictum. Pellentesque lorem quam, auctor et massa et, congue pharetra mauris. Sed dui quam, scelerisque finibus ultrices faucibus, accumsan eu metus. Maecenas viverra malesuada metus nec pretium. Donec vitae dui turpis. Nulla dapibus finibus felis, quis semper eros posuere et. Suspendisse placerat vel sem eget auctor. Proin tempor molestie dictum. Praesent nec euismod tortor, at elementum justo. In rutrum gravida purus, quis fermentum massa suscipit id. Vivamus id leo tristique, ullamcorper ligula at, laoreet diam.
-
-Maecenas ac mauris urna. Morbi at nisl tortor. Ut elementum neque eget sem tempor, ut ullamcorper justo venenatis. Nullam augue nulla, suscipit sit amet est in, fringilla pulvinar arcu. Vestibulum euismod malesuada dui eu tempus. Aenean tincidunt et magna nec vehicula. Morbi euismod auctor ante a vestibulum. Sed tincidunt tortor nec justo bibendum lacinia. In hac habitasse platea dictumst. Curabitur rhoncus quam pretium, ultricies felis sed, auctor enim. Donec vel rhoncus turpis, nec ultricies justo. Aenean lobortis diam id rhoncus dapibus. Nullam nec dolor in orci dictum egestas. Praesent ac purus ut ex bibendum pharetra. Duis lacinia urna quis ipsum vestibulum, et hendrerit velit elementum."
+                android:text="tor nec justo bibendum lacinia. In hac habitasse platea dictumst. Curabitur rhoncus quam pretium, ultricies felis sed, auctor enim. Donec vel rhoncus turpis, nec ultricies justo. Aenean lobortis diam id rhoncus dapibus. Nullam nec dolor in orci dictum egestas. Praesent ac purus ut ex bibendum pharetra. Duis lacinia urna quis ipsum vestibulum, et hendrerit velit elementum."
                 app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
@@ -202,11 +204,11 @@ Maecenas ac mauris urna. Morbi at nisl tortor. Ut elementum neque eget sem tempo
                 android:id="@+id/button_bagikan"
                 android:layout_width="74dp"
                 android:layout_height="27dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_corner"
                 android:text="Bagikan"
                 android:textColor="#ffffff"
                 android:textSize="12dp"
-                android:background="@drawable/rounded_corner"
                 app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
@@ -214,18 +216,61 @@ Maecenas ac mauris urna. Morbi at nisl tortor. Ut elementum neque eget sem tempo
 
             <TextView
                 android:layout_width="wrap_content"
-                android:onClick="undoButton"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:drawableStart="@drawable/ic_arrow_back_black_24dp"
+                android:onClick="undoButton"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
                 app:layout_constraintTop_toTopOf="parent" />
 
 
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="Kisah Lainnya"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+                app:layout_constraintTop_toBottomOf="@+id/button_bagikan" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:layout_height="120dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
 
 
+                <ImageView
+                        android:layout_width="118dp"
+                        android:layout_height="118dp"
+                        tools:src="@tools:sample/avatars"/>
+
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="118dp"
+                        android:layout_height="118dp"
+                        tools:src="@tools:sample/avatars"/>
+
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="118dp"
+                        android:layout_height="118dp"
+                        tools:src="@tools:sample/avatars"/>
+
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="118dp"
+                        android:layout_height="118dp"
+                        tools:src="@tools:sample/avatars"/>
+                </LinearLayout>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
