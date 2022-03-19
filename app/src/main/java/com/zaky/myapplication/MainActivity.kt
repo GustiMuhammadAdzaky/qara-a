@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showRecyclerCardView() {
         rv.layoutManager = LinearLayoutManager(this)
+//        rv.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         val cardViewAdapter = CardViewAdapter(list)
         rv.adapter = cardViewAdapter
         cardViewAdapter.setOnItemClickCallback(object : CardViewAdapter.OnItemClickCallback {

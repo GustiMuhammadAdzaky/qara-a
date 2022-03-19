@@ -194,7 +194,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="tor nec justo bibendum lacinia. In hac habitasse platea dictumst. Curabitur rhoncus quam pretium, ultricies felis sed, auctor enim. Donec vel rhoncus turpis, nec ultricies justo. Aenean lobortis diam id rhoncus dapibus. Nullam nec dolor in orci dictum egestas. Praesent ac purus ut ex bibendum pharetra. Duis lacinia urna quis ipsum vestibulum, et hendrerit velit elementum."
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id interdum sapien. Sed porttitor dapibus accumsan. Cras varius nulla vitae nisl eleifend pretium. Nullam ultrices sagittis massa, id interdum tortor. Donec vitae velit mollis, elementum dui vitae, auctor odio. In nec iaculis justo, a faucibus lectus. Pellentesque quis rhoncus nulla. Ut feugiat finibus arcu, nec fringilla lorem.
+
+Quisque gravida neque id lorem tristique gravida. In a nulla placerat, elementum tellus ac, sodales urna. Vestibulum vestibulum augue a quam rutrum varius. Pellentesque id diam scelerisque metus rhoncus aliquam. Nam tortor nibh, faucibus sed tincidunt vel, feugiat sed elit. Nulla in ipsum iaculis, placerat felis sit amet, sollicitudin nibh. Nullam in augue pretium, accumsan neque quis, pretium purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas commodo quam in fermentum aliquam. Morbi ex risus, vestibulum non sem vestibulum, ultrices facilisis ante. Nulla lobortis condimentum hendrerit. Fusce sit amet justo sodales, condimentum nibh in, sodales justo. Morbi aliquam ut arcu hendrerit dapibus.
+
+Fusce ut consectetur tortor, eleifend tempus justo. Mauris tempus gravida tincidunt. Nulla et tellus et turpis lacinia dictum. In quis luctus ante. Donec finibus, orci nec tincidunt tincidunt, erat urna vulputate ligula, faucibus semper enim leo sed felis. Praesent in nibh nec metus lacinia hendrerit. Suspendisse potenti. tor nec justo bibendum lacinia. In hac habitasse platea dictumst. Curabitur rhoncus quam pretium, ultricies felis sed, auctor enim. Donec vel rhoncus turpis, nec ultricies justo. Aenean lobortis diam id rhoncus dapibus. Nullam nec dolor in orci dictum egestas. Praesent ac purus ut ex bibendum pharetra. Duis lacinia urna quis ipsum vestibulum, et hendrerit velit elementum."
                 app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
@@ -239,38 +243,16 @@
                 app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
                 app:layout_constraintTop_toBottomOf="@+id/button_bagikan" />
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:orientation="horizontal"
-                android:layout_height="120dp"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="11dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2">
-
-
-                <ImageView
-                        android:layout_width="118dp"
-                        android:layout_height="118dp"
-                        tools:src="@tools:sample/avatars"/>
-
-                    <ImageView
-                        android:layout_marginLeft="15dp"
-                        android:layout_width="118dp"
-                        android:layout_height="118dp"
-                        tools:src="@tools:sample/avatars"/>
-
-                    <ImageView
-                        android:layout_marginLeft="15dp"
-                        android:layout_width="118dp"
-                        android:layout_height="118dp"
-                        tools:src="@tools:sample/avatars"/>
-
-                    <ImageView
-                        android:layout_marginLeft="15dp"
-                        android:layout_width="118dp"
-                        android:layout_height="118dp"
-                        tools:src="@tools:sample/avatars"/>
-                </LinearLayout>
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                tools:listitem="@layout/rv_horizon_nabi" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
