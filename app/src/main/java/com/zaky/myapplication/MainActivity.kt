@@ -92,5 +92,15 @@ class MainActivity : AppCompatActivity() {
         startActivity(moveWithDataIntent)
     }
 
+    fun tombolBookmark(view: View) {
+        val moveWithDataIntent = Intent(this@MainActivity, BookmarkActivity::class.java)
+        startActivity(moveWithDataIntent)
+    }
+
+    fun undoButton(view: View) {
+        val moveWithDataIntent = Intent(this@MainActivity, BookmarkActivity::class.java)
+        startActivity(moveWithDataIntent)
+    }
+
 
 }
