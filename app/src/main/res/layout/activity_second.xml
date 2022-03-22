@@ -134,49 +134,49 @@
             </LinearLayout>
 
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="90dp"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-                app:layout_constraintHorizontal_bias="0.413"
-                app:layout_constraintStart_toEndOf="@+id/linearLayout"
-                app:layout_constraintTop_toTopOf="@+id/linearLayout">
+            <!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="90dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/guidelineRight"-->
+<!--                app:layout_constraintHorizontal_bias="0.413"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/linearLayout"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/linearLayout">-->
 
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="12dp"
-                    android:foreground="@drawable/ic_volume_up_black_24dp"
-                    android:foregroundGravity="center">
+<!--                <FrameLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginRight="12dp"-->
+<!--                    android:foreground="@drawable/ic_volume_up_black_24dp"-->
+<!--                    android:foregroundGravity="center">-->
 
-                    <Button
-                        android:id="@+id/StartButton2x3"
-                        android:layout_width="50dp"
-                        android:layout_height="fill_parent"
-                        android:background="@drawable/tombol_bulat"
-                        android:gravity="center_vertical" />
-                </FrameLayout>
-
-
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:foreground="@drawable/ic_bookmark"
-                    android:foregroundGravity="center">
-
-                    <Button
-                        android:id="@+id/StartButton2x2"
-                        android:layout_width="50dp"
-                        android:layout_height="fill_parent"
-                        android:background="@drawable/tombol_bulat"
-                        android:gravity="center_vertical"
-                        android:shadowColor="#000000" />
-                </FrameLayout>
+<!--                    <Button-->
+<!--                        android:id="@+id/StartButton2x3"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="fill_parent"-->
+<!--                        android:background="@drawable/tombol_bulat"-->
+<!--                        android:gravity="center_vertical" />-->
+<!--                </FrameLayout>-->
 
 
-            </LinearLayout>
+<!--                <FrameLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:foreground="@drawable/ic_bookmark"-->
+<!--                    android:foregroundGravity="center">-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/StartButton2x2"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="fill_parent"-->
+<!--                        android:background="@drawable/tombol_bulat"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:shadowColor="#000000" />-->
+<!--                </FrameLayout>-->
+
+
+<!--            </LinearLayout>-->
 
             <!--            <WebView-->
             <!--                android:id="@+id/WvDetail"-->
@@ -187,6 +187,20 @@
             <!--                app:layout_constraintStart_toStartOf="@+id/guidelineLeft"-->
             <!--                app:layout_constraintTop_toBottomOf="@+id/linearLayout"-->
             <!--                tools:ignore="WebViewLayout" />-->
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_bookmark"
+                android:onClick="buttonPindahGambar"
+                app:backgroundTint="#ffffff"
+                app:layout_constraintBottom_toBottomOf="@+id/view2"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+                app:layout_constraintTop_toTopOf="@+id/view2"
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/TvDetail"
@@ -212,6 +226,7 @@ Fusce ut consectetur tortor, eleifend tempus justo. Mauris tempus gravida tincid
                 android:background="@drawable/rounded_corner"
                 android:text="Bagikan"
                 android:textColor="#ffffff"
+                android:onClick="changeImage"
                 android:textSize="12dp"
                 app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -219,6 +234,7 @@ Fusce ut consectetur tortor, eleifend tempus justo. Mauris tempus gravida tincid
                 app:layout_constraintTop_toBottomOf="@+id/TvDetail" />
 
             <TextView
+                android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
